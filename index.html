@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reno Kurniawan Panjaitan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.prod.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c11efc60b6d_RevoU.svg" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo-section">
+                <img src="https://cdn.prod.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c11efc60b6d_RevoU.svg" alt="RevoU Logo" class="logo-icon">
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="profile.html">Our Profile</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Message Us</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hi <span class="welcome-name" id="welcomeName">Name</span>, Welcome To Website</h1>
+                <p>Ini adalah website latihan pertama</p>
+            </div>
+        </section>
+
+        <section id="profile" class="section">
+            <div class="container">
+                <h2 class="section-title">Our Headquarters</h2>
+                <p class="section-description">We have offices in major cities across Indonesia, serving clients nationwide with excellence and dedication.</p>
+                <div class="headquarters-grid">
+                    <div class="headquarters-item">
+                        <div class="headquarters-circle">J</div>
+                        <h3>Jakarta</h3>
+                        <p>Head Office & Operations Center</p>
+                    </div>
+                    <div class="headquarters-item">
+                        <div class="headquarters-circle">B</div>
+                        <h3>Bandung</h3>
+                        <p>Technology & Innovation Hub</p>
+                    </div>
+                    <div class="headquarters-item">
+                        <div class="headquarters-circle">S</div>
+                        <h3>Surabaya</h3>
+                        <p>Regional Sales Office</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Our Portfolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&crop=center" alt="Website Project">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Modern Website Design</h3>
+                            <p>Responsive corporate website with modern UI/UX</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop&crop=center" alt="Mobile App">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Mobile Application</h3>
+                            <p>Cross-platform mobile app with intuitive design</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop&crop=center" alt="E-commerce Platform">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>E-commerce Platform</h3>
+                            <p>Full-featured online store with payment integration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Message Us</h2>
+                <p class="section-description">Get in touch with us. We'd love to hear from you and discuss how we can help with your next project.</p>
+                <div class="contact-container">
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nama</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="birthDate">Tanggal Lahir</label>
+                                <input type="date" id="birthDate" name="birthDate" required placeholder="hh/bb/tttt">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Jenis Kelamin</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="gender" value="Perempuan" required> Perempuan
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Pesan</label>
+                                <textarea id="message" name="message" required rows="4"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-submit">Kirim Pesan</button>
+                        </form>
+                    </div>
+                    
+                    <div class="results-panel">
+                        <h3>Informasi Terkirim</h3>
+                        <div class="results-content" id="resultsContent">
+                            <div class="result-item">
+                                <span class="result-label">Current time:</span>
+                                <span class="result-value" id="currentTime">15/8/2025, 20.37.54</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Nama:</span>
+                                <span class="result-value" id="resultName">Belum diisi</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Tanggal Lahir:</span>
+                                <span class="result-value" id="resultBirthDate">Belum diisi</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Jenis Kelamin:</span>
+                                <span class="result-value" id="resultGender">Belum dipilih</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Pesan:</span>
+                                <span class="result-value" id="resultMessage">Belum ada pesan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 My Website. Created By Reno Kurniawan Panjaitan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
